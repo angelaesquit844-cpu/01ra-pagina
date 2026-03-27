@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora y Convertidor</title>
+
+<style>
+body { font-family: Arial; text-align: center; background:#eef; }
+
+.caja {
+    background:white;
+    padding:15px;
+    margin:20px auto;
+    width:260px;
+    border-radius:10px;
+}
+
+input { width:90%; height:35px; margin:5px; text-align:right; }
+
+button { width:50px; height:40px; margin:3px; }
+
+.formula {
+    font-size: 12px;
+    color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<h2>🧮 Calculadora</h2>
+
+<div class="caja">
+<input id="pantalla" disabled>
+
+<br>
+
+<button onclick="agregar('7')">7</button>
+<button onclick="agregar('8')">8</button>
+<button onclick="agregar('9')">9</button>
+<button onclick="agregar('/')">÷</button><br>
+
+<button onclick="agregar('4')">4</button>
+<button onclick="agregar('5')">5</button>
+<button onclick="agregar('6')">6</button>
+<button onclick="agregar('*')">×</button><br>
+
+<button onclick="agregar('1')">1</button>
+<button onclick="agregar('2')">2</button>
+<button onclick="agregar('3')">3</button>
+<button onclick="agregar('-')">-</button><br>
+
+<button onclick="agregar('0')">0</button>
+<button onclick="limpiar()">C</button>
+<button onclick="calcular()">=</button>
+<button onclick="agregar('+')">+</button>
+</div>
+
+<h2>🌡️ Convertidor</h2>
+
+<div class="caja">
+<input type="number" id="temp" placeholder="Ej: 29">
+
+<br>
+
+<button onclick="cAF()">°C→°F</button>
+<button onclick="fAC()">°F→°C</button>
+
+<p id="res"></p>
+
+<p class="formula">
+F = (C × 9/5) + 32 <br>
+C = (F − 32) × 5/9
+</p>
+</div>
+
+<script>
+function agregar(v){ pantalla.value += v; }
+function limpiar(){ pantalla.value = ""; }
+function calcular(){ pantalla.value = eval(pantalla.value); }
+
+function cAF(){
+ let c=temp.value;
+ res.innerHTML = c+"°C = "+((c*9/5)+32).toFixed(2)+"°F";
+}
+
+function fAC(){
+ let f=temp.value;
+ res.innerHTML = f+"°F = "+((f-32)*5/9).toFixed(2)+"°C";
+}
+</script>
+
+</body>
+</html>

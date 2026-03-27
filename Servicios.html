@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌸 Servicios - Floristería Online 🌸</title>
+<meta name="description" content="Descubre los servicios de nuestra floristería online: ramos, arreglos personalizados, decoración para bodas y más.">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --color-primario: #ff69b4;
+    --color-secundario: #ffb6c1;
+    --color-fondo: #ffe4e1;
+    --color-texto: #333;
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+
+body {
+    font-family: 'Baloo 2', cursive;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+nav {
+    background: var(--color-secundario);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover { color: #fff0f5; }
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: var(--color-primario);
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 20px;
+    color: #c71585;
+    margin-bottom: 40px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.service-list {
+    background: #fff0f5;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-list h2 {
+    color: #ff1493;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.service-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    font-size: 18px;
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.service-list li::before {
+    content: "🌸";
+    position: absolute;
+    left: 0;
+}
+
+.service-list p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--color-secundario);
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav a { display: block; margin: 10px 0; }
+    header h1 { font-size: 36px; }
+    .service-list h2 { font-size: 24px; }
+    .service-list li, .service-list p { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="Nosotros.html">Nosotros</a>
+    <a href="Servicios.html">Servicios</a>
+    <a href="Contacto.html">Contacto</a>
+    <a href="Galeria.html">Galería</a>
+    <a href="Calculos.html">Calculos</a>
+</nav>
+
+<header>
+    <h1>🌸 Nuestros Servicios 🌸</h1>
+    <p>💐 Ofrecemos una amplia variedad de servicios florales para alegrar cada momento de tu vida 💐</p>
+</header>
+
+<main>
+    <section class="service-list">
+        <h2>🌷 Servicios que realizamos</h2>
+        <ul>
+            <li>Envío de ramos frescos a domicilio</li>
+            <li>Diseño de arreglos personalizados para eventos</li>
+            <li>Decoración floral para bodas y celebraciones</li>
+            <li>Suscripción mensual de flores frescas</li>
+            <li>Asesoría y cuidado de plantas y flores</li>
+        </ul>
+        <p>
+            Cada servicio está diseñado con amor y atención al detalle. Nos aseguramos de que cada flor llegue fresca y hermosa, creando momentos inolvidables para ti y tus seres queridos.
+        </p>
+    </section>
+</main>
+
+<footer>
+© 2026 Floristería Online 🌸 | Todos los derechos reservados
+</footer>
+
+</body>
+</html>

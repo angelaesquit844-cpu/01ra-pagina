@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌸 Galería - Floristería Online 🌸</title>
+<meta name="description" content="Descubre nuestra galería de arreglos florales y momentos especiales.">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --color-primario: #ff69b4;
+    --color-secundario: #ffb6c1;
+    --color-fondo: #ffe4e1;
+    --color-texto: #333;
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+
+body {
+    font-family: 'Baloo 2', cursive;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+nav {
+    background: var(--color-secundario);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover { color: #fff0f5; }
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 { font-size: 50px; color: var(--color-primario); margin-bottom: 20px; }
+header p { font-size: 20px; color: #c71585; margin-bottom: 40px; }
+
+.gallery {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--color-secundario);
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    header h1 { font-size: 36px; }
+    header p { font-size: 16px; }
+    .gallery img { height: 180px; }
+    nav a { display: block; margin: 10px 0; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="Nosotros.html">Nosotros</a>
+    <a href="Servicios.html">Servicios</a>
+    <a href="Contacto>Contacto</a>
+    <a href="Galeria.html">Galeria</a>
+    <a href="Calculos.html">alculos</a>
+</nav>
+
+<header>
+    <h1>🌸 Nuestra Galería 🌸</h1>
+    <p>💐 Descubre nuestros arreglos florales y momentos especiales 💐</p>
+</header>
+
+<main class="gallery">
+    <img src="images/ramos.webp" alt="Flor 1">
+    <img src="images/rosa.webp" alt="Flor 2">
+    <img src="images/panes.webp" alt="Flor 3">
+    <img src="images/mora.webp" alt="Flor 4">
+    <img src="images/marga.webp" alt="Flor 5">
+</main>
+
+<footer>
+© 2026 Floristería Online 🌸 | Todos los derechos reservados
+</footer>
+
+</body>
+</html>
